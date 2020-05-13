@@ -1,3 +1,3 @@
 # order-management-app
 
-Go to src folder: Run npm start 
+Go to src folder:  npm start 
