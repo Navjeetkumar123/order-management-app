@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "8f1f1418-de6a-43b0-bdf4-ace8d8691a0c",
+		"name": "productManagement-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createCustomer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" :\"customer1\",\n\t\"id\": \"cust123\",\n\t\"email\": \"customer1@gmail.com\",\n\t\"password\" : \"123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/createCustomer",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"createCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createproduct",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"product_name\": \"Headfon\",\n\t\"product_price\": 200\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/createproduct",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"createproduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "order",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"order_id\": 1,\n\t\"ordered_by\": \"5ebb0bfe82a5845eadc90fea\",\n\t\"product_id\": \"1589316609911\",\n\t\"product_name\": \"Headfon\",\n\t\"product_quantity\": 4\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/order",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"order"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
